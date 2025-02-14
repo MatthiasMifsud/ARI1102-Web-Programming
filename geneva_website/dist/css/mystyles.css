@@ -1,0 +1,851 @@
+/*Body*/
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1E2022;
+    background-color: #F0F5F9;
+}
+
+/*Dark mode styling*/
+body.dark-mode {
+    background-color: #000000;
+    color: #F0F5F9;
+}
+
+body.dark-mode .text-content{
+    color: #F0F5F9;
+}
+
+body.dark-mode .text-content:hover{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.65);
+}
+
+body.dark-mode .text h2{
+    color: #e6be8a;
+}
+
+body.dark-mode .form-container{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.35);
+
+}
+
+body.dark-mode .weatherContainer{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.35);
+}   
+
+body.dark-mode .weatherHeader{
+    color: #e6be8a !important;
+}
+
+body.dark-mode .mapHeader{
+    color: #e6be8a !important;
+}
+
+body.dark-mode #map{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.35);
+}
+
+body.dark-mode #reviewsContainer{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.35);
+
+}
+
+/*Dark mode button */
+.darkModeToggle{
+    background-color: #000000;
+    color: #e6be8a;
+}
+
+.transparent-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #52616B;
+}
+.transparent-btn:hover {
+    color: #e6be8a; 
+}
+
+
+/*Navigation Bar*/
+.navbar-brand{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+.navbar-brand:hover{
+    transition: 0.2s ease-in;
+    transform: scale(1.2); 
+}
+
+.navbar .nav-link {
+    transition: color 0.3s !important;
+    color: #52616B !important;
+}
+
+.navbar .nav-link:hover {
+    color: #e6be8a !important;
+    transition: color 0.3s; 
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    color: #52616B;
+    border: none;
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-toggler:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+/*Welcome Page*/
+.masthead {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    color: #000000 !important;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+/*Text Styling*/
+.site-heading{
+    color: #F0F5F9 !important;
+    z-index: 1000 !important; 
+}
+
+.subheading {
+    background: linear-gradient(90deg, #e6be8a, #52616B) !important; 
+    background-clip: text !important;
+    -webkit-background-clip: text !important; /* For Safari */
+    color: transparent !important;
+    font-weight: 500 !important;
+    animation: zoomIn 2s ease-out; 
+    animation-fill-mode: forwards; /* Keeping the final state of the animation */
+}
+
+.text {
+    padding: 5% 2%; 
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: left; 
+}
+
+.text h2 {
+    text-align: center;
+    color: #52616B ;
+}
+
+.text p {
+    margin-bottom: 10px; 
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.content{
+    transition: transform 0.3s ease-in-out;
+}
+
+.content:hover{
+    transform: scale(1.1);    
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    animation: zoomIn 2s ease-out; 
+    animation-fill-mode: forwards; /* Keeping the final state of the animation */
+}
+
+.content-wrapper {
+    flex-direction: column;
+    align-items: center; 
+}
+
+.text-content {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #1E2022;
+    margin: 140px 0px;
+    padding: 10px 20px; 
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.text-content:hover{
+    transition: transform 0.5s, background-image 0.5s ease-in-out;
+    transform: scale(1.1);
+    border-radius: 20px;
+    background: linear-gradient(135deg, #003852, #000000);
+    padding: 10px 20px;
+    color: #F0F5F9 !important;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.75);
+
+}
+
+.text-content:hover h2{
+    color: #e6be8a;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.1); 
+        opacity: 0;            
+    }
+    100% {
+        transform: scale(1);   
+        opacity: 1;         
+    }
+}
+
+h2 {
+    transition: color 0.5s ease;
+}
+
+h2:hover{
+    color: #e6be8a;
+}
+
+
+/*Image Slider Styling*/
+.slider-container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
+	border-radius: 0.5rem;
+}
+
+.slider img {
+    min-width: 100%;
+    height: 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #f0f5f979;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.slider-arrow:hover {
+    color: #F0F5F9;
+}
+
+.prev{
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+.image-bottom {
+    max-width: 650px; 
+    max-height: 500px;
+    border-radius: 15px; 
+    margin: 30px auto; 
+    display: block;
+    transition: transform 1s ease-in-out;
+}
+
+.image-bottom:hover {
+    transform: scale(1.1); 
+}
+
+/*User Review Form*/
+
+.form-control{
+    border-radius: 10px !important;
+    background-color: #F0F5F9;
+    padding-left: 10px !important;
+}
+
+.form-floating{
+    border-radius: 10px !important;
+    background-color: transparent;
+}
+
+.form-container {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #003852, #000000); 
+    padding: 10px;
+    margin: 200px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.75);
+}
+
+#nameError{
+    color: #d60000;
+}
+
+#messageError{
+    color: #d60000;
+}
+
+.button{
+    background-color: transparent;
+    color: #F0F5F9 !important;
+    border-radius: 15px;
+    padding: 8px;
+    border-color: #F0F5F9;
+    margin: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s !important;
+    transition: color 0.3s !important;
+
+}
+
+.button:hover{
+    border-color: #e6be8a !important;
+    color: #e6be8a !important;
+    transition: color 0.3s; 
+    transition: border-color 0.3s; 
+
+}
+
+/*Review page*/
+#reviewsContainer {
+    background: linear-gradient(135deg, #1a2b35, #000000); 
+    margin: 300px auto;
+    padding: 50px 20px; 
+    border-radius: 20px; 
+    max-width: 1200px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.75);
+}
+
+#reviewsHeader {
+    animation: none;
+    text-align: center;
+    color: #e6be8a;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(230, 190, 138, 0.3); 
+    margin-bottom: 30px;
+}
+
+#emptyReview{
+    font-size: xx-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: bold;
+    color:#F0F5F9;
+}
+
+#reviewsContent {
+    position: relative; 
+    margin-bottom: 50px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;    
+    padding: 20px;
+}
+
+.reviewBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    background-color: #ffffff; 
+    color: #333333; 
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    word-wrap: break-word;      
+    word-break: break-word;      
+    overflow: hidden;          
+    padding-bottom: 40px;
+}
+
+.reviewBox:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 1rem 2.5rem rgba(0, 132, 255, 0.3);
+}
+
+.reviewSection {
+    margin-bottom: 15px;
+}
+
+#reviewTime {
+    position: absolute;
+    bottom: 10px; 
+    left: 20px; 
+    display: flex;
+    font-size: 0.9rem;
+    color: #888888; 
+    gap: 10px;
+}
+
+#reviewName {
+    font-size: x-large;
+    font-weight: 600;
+    color: #004466; 
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003852bd; 
+    padding-bottom: 5px; 
+}
+
+#reviewMessage {
+    display: flex;
+    font-size: 1.1rem;
+    color: #555555; 
+    gap: 10px;
+}
+
+#showMoreButton {
+    position: absolute;
+    bottom: -60px;
+    background-color: #003852; 
+    color: #F0F5F9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 150px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#showMoreButton:hover {
+    background-color: #e6be8a; 
+}
+
+/*Footer Styling*/
+.list-inline-item a {
+    color: #52616B;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.list-inline-item a:hover {
+    color: #e6be8a;
+}
+
+.border-top{
+    padding: 30px !important;
+}
+
+
+/* Top Page Arrow Styling */
+.top-page-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.6s ease;
+    z-index: 1000; /* Keeps it on top of other elements */
+}
+
+.top-page-arrow a {
+    color: #e6be8a;
+    display: inline-block;
+    transition: transform 0.2s ease; 
+}
+
+.top-page-arrow a:hover {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/*Weather Styling*/
+
+.weatherMainContainer {
+    transition: 0.3s ease-in-out;
+    max-width: 100%;
+    margin: 200px 300px 300px 300px;
+}
+
+.weatherMainContainer:hover {
+    transform: scale(1.1);
+}
+
+.weatherContainer {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px auto;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.65);
+    background-position: center;
+    background-size: cover;
+}
+
+.weatherHeader {
+    text-align: center;
+    color: #52616B;
+    transition: 0.2s ease-in-out;
+}
+
+.weatherHeader:hover {
+    color: #e6be8a;
+}
+
+#weatherTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #52616B;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#weatherSubL {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#weatherSubL img {
+    width: 100px;
+    height: 100px;
+}
+
+.currentTemp {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #e6be8a;
+    font-family: Helvetica, sans-serif;
+    text-shadow: black 1px 0 10px;
+}
+
+.dayOrNight {
+    font-size: medium;
+    color: #e6be8aca;
+    text-shadow: black 1px 0 10px;
+
+}
+
+#weatherSubR {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #e6be8a;
+    text-shadow: black 1px 0 10px;
+    gap: 5px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.weatherIcon {
+    height: 32px;
+    width: 32px;
+    transition: 0.2s ease-in-out; 
+}
+
+.weatherIcon:hover {
+    transform: scale(1.2);
+}
+
+#weather {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    margin-top: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.weatherBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    padding: 10px 30px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.65);
+    font-size: 14px;
+    text-align: left;
+    color: #F0F5F9;
+    transition: 0.3s ease-in-out;
+    width: 100%; 
+    max-width: 100%; /* Preventing overflow */
+}
+
+.weatherBox:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 1rem 2.5rem rgba(0, 132, 255, 0.3); 
+
+}
+
+#weatherHeader {
+    font-weight: bold;
+}
+
+.weatherBoxText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+/*Map Styling*/
+
+.mapContainer{
+    transition: 0.3s ease-in-out;
+    max-width: 100%;
+    margin: 200px;
+}
+
+.mapContainer:hover{
+    transform: scale(1.1);
+}
+
+#map { 
+    display: flex;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.65);
+    justify-content: center;
+}
+
+.mapHeader{
+    text-align: center;
+    color: #52616B;
+}
+
+@media (max-width: 1300px) {
+    .text {
+        padding: 65px; 
+    }
+
+    .refresh-arrow {
+        font-size: 1.5em; 
+    }
+
+    .content:hover{
+        transform: none;
+    }
+
+    .slider-container{
+        padding: 0rem;
+    }
+
+    .form-container{
+        margin: 100px;
+    }
+
+    .weatherMainContainer {
+        margin: 200px 100px 300px 100px;
+    }
+
+    .mapContainer{
+        margin: 200px 100px;
+    }
+
+    #reviewsContainer{
+        margin: 300px 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        padding: 50px; 
+    }
+
+    .text-content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .refresh-arrow {
+        font-size: 1.5em; 
+    }
+
+    .content:hover{
+        transform: none;
+    }
+
+    .slider-container{
+        padding: 0rem;
+    }
+
+    .form-container{
+        margin: 60px;
+    }
+
+    .weatherMainContainer {
+        margin: 200px 75px 300px 75px;
+    }
+
+    .mapContainer {
+        margin: 200px 75px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .image-bottom:hover {
+        transform: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        padding: 30px; 
+    }
+
+    .refresh-arrow {
+        font-size: 1.5em; 
+    }
+
+    .content:hover{
+        transform: none;
+    }
+    
+    .text-content{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .slider-container, .content-wrapper {
+        padding: 0rem;
+    }
+
+    .form-container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #weather {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 10px; 
+    }
+
+    .image-bottom {
+        max-width: 100%;
+    }
+
+    .weatherMainContainer {
+        margin: 200px 25px 300px 25px;
+    }
+
+    .mapContainer{
+        margin: 200px 25px;
+    }
+
+    #reviewsContainer{
+        margin: 300px 50px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar-toggler, .navbar-brand {
+        font-size: 1.5em; 
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    .text{
+        padding: 22px;
+    }
+    
+    .subheading {
+        font-size: 1.2em;
+    }
+
+    .content:hover{
+        transform: none;
+    }
+    
+    .slider-container, .content-wrapper {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-container{
+        margin: 10px
+    }
+
+    .image-bottom {
+        max-width: 100%;
+    }
+
+
+    #weatherTitle {
+        display:block;
+    }
+
+    #weatherSubL {
+        padding-right: 10px;
+        gap: 10px;
+        justify-content: center; 
+        text-align: center;    
+    }
+
+    #weatherSubR {
+        display: block;
+        text-align: center;
+
+    }
+
+    #weather {
+        grid-template-columns: repeat(1, 1fr); /* One column */
+    }
+
+    #reviewsContainer{
+        margin: 300px 10px;
+    }
+
+    .reviewBox{
+        margin: 10px;
+    }
+}

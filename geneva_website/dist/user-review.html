@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>User Review | Geneva</title>
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Style sheets -->  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="home.html" style="background-image: url('assets/img/Flag.png');" title="Refresh Page"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="attractions.html">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="user-review.html">User Review</a></li>
+                    <li class="nav-item" title= "Dark Mode"><a class="nav-link px-lg-3 py-3 py-lg-4" ><button id="darkModeToggle" class="transparent-btn">&#9681;</button></a></li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Page Arrow -->
+    <div class="top-page-arrow">
+        <a href="#top" title="Go to Top">&#8683;</a>
+    </div>
+        
+    <!-- Page Header-->
+    <header class="masthead" >
+        <video autoplay muted loop id="myVideo">
+            <source src="https://cdn.dribbble.com/userupload/7438087/file/original-a976f0b4490b2819c98f15329a733a72.mp4" type="video/mp4">
+        </video>
+        <div class="site-heading">
+            <h1 style="color: #1E2022;">User Review</h1>
+        </div>
+    </header>
+
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="form-container">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p><h2 style="color: #e6be8a; text-align: center;">Fill in the form below to give us feedback on the website!</h2></p>
+                        <div class="my-5">
+                            <form id="contactForm">
+                                <div class="form-floating" title="Current date and time">
+                                    <input class="form-control" id="currentDate" type="text" placeholder="Current Date and Time" readonly/>
+                                    <label for="currentDate" style="padding-left: 10px;">Current Date and Time</label>
+                                </div>
+                                <br />
+                                
+                                <div class="form-floating" title="Enter your name">
+                                    <input class="form-control" id="name" type="text" placeholder="Name"/>
+                                    <label for="name" style="padding-left: 10px;">Name</label>
+                                    <div id="nameError"></div>
+                                </div>
+                                </br >
+                                <div class="form-floating" title="Enter your message">
+                                    <textarea class="form-control" id="message" placeholder="Message" style="height: 12rem"></textarea>                        
+                                    <label for="message" style="padding-left: 10px;">Message</label>
+                                    <div id="messageError"></div>
+                                </div>
+                                <br />
+
+                                <!-- Submit Button-->
+                                <div class="text-center" title="Submit Form">
+                                    <button class="button" id="submitButton" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div id="reviewsContainer">
+            <h1 id="reviewsHeader">Reviews</h1>
+            <div id="reviewsContent"></div>
+        </div>
+        
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5" >
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/MatthiasMifsud" title="GitHub">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--My JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/form.js"></script>
+    </body>
+</html>

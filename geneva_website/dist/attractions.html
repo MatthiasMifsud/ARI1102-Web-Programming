@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Attractions | Geneva</title>
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Style sheets-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="home.html" style="background-image: url('assets/img/Flag.png');" title="Refresh Page"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="attractions.html">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="user-review.html">User Review</a></li>
+                    <li class="nav-item" title= "Dark Mode"><a class="nav-link px-lg-3 py-3 py-lg-4" ><button id="darkModeToggle" class="transparent-btn">&#9681;</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Page Arrow -->
+    <div class="top-page-arrow">
+        <a href="#top" title="Go to Top">&#8683;</a>
+    </div>
+
+    <!-- Page Header-->
+    <header class="masthead">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://videos.pexels.com/video-files/9113160/9113160-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="site-heading">
+            <h1>Attractions In Geneva</h1>
+        </div>
+    </header>
+
+    <!-- Main Content-->
+    <main class="text" style="margin-top: -100px;">
+
+        <div class="text-content" id="LakeGeneva" title="Lake Geneva">
+            <h2>Lake Geneva</h2>
+            <div class="content-wrapper">
+                <h4>
+                    <p>Lake Geneva, surrounded by the Alps, offers stunning scenery, boat cruises, and lakeside promenades. Key attractions include Geneva’s Jet d’Eau and the Château de Chillon near Montreux, making it a popular destination for nature and culture lovers.</p>
+                </h4>
+                <div class="image-bottom" title="Lake Geneva">
+                    <section class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide" src="assets/img/lake1.jpg" alt="Image #1" />
+                                <img id="slide" src="assets/img/lake4.jpg" alt="Image #2" />
+                                <img id="slide" src="assets/img/lake2.jpeg" alt="Image #3" />
+                                <img id="slide" src="assets/img/lake3.jpg" alt="Image #4" />
+                            </div>
+                            <button class="slider-arrow prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="slider-arrow next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-content" id="CERN" title="CERN Science Gateway">
+            <h2>Cern Science Gateway</h2>
+            <div class="content-wrapper">
+                <h4>
+                    <p>The CERN Science Gateway is a world-class attraction for tourists visiting Geneva, Switzerland. Opened in 2023, it serves as an educational and inspirational hub, inviting visitors to explore the wonders of particle physics and the mysteries of the universe in an engaging and accessible way.</p>
+                </h4>
+                <div class="image-bottom">
+                    <section class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide" src="assets/img/cern1.jpeg" alt="Image #1" />
+                                <img id="slide" src="assets/img/cern2.jpg" alt="Image #2" />
+                                <img id="slide" src="assets/img/cern3.jpeg" alt="Image #3" />
+                            </div>
+                            <button class="slider-arrow prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="slider-arrow next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-content" id="JetDeau" title="Jet d'Eau">
+            <h2>Jet d'Eau</h2>
+            <div class="content-wrapper">
+                <h4>
+                    <p>The Jet d’Eau is an iconic fountain in Geneva, shooting water 140 meters into the air from Lake Geneva. It’s one of the city’s most famous landmarks, symbolizing its connection to the lake and offering stunning views.</p>
+                </h4>
+                <div class="image-bottom">
+                    <section class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide" src="assets/img/jetdeau1.webp" alt="Image #1" />
+                                <img id="slide" src="assets/img/jetdeau2.jpeg" alt="Image #2" />
+                            </div>
+                            <button class="slider-arrow prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="slider-arrow next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-content" id= "OldTown" title="The Old Town">
+            <h2>The Old Town</h2>
+            <div class="content-wrapper">
+                <h4>
+                    <p>Discover the medieval charm of this small historical jewel! The largest historic city in Switzerland, the Old Town is dominated by St. Peter's Cathedral, the centre of the Reformation. Climb the 157 steps to the top of the tower for a unique panorama of the city. The view is well worth the effort!</p>
+                    <p>After the cathedral, take a stroll through the town’s maze of narrow, paved streets. Each picturesque street hosts one of Geneva’s many historical treasures. Here’s a little tip: many secret passageways link up the streets of the Old Town, don’t hesitate to find and follow them!</p>
+                </h4>
+                <div class="image-bottom">
+                    <section class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide" src="assets/img/old1.webp" alt="The Old Town Image" />
+                                <img id="slide" src="assets/img/old2.webp" alt="The Old Town Image" />
+                                <img id="slide" src="assets/img/old3.webp" alt="The Old Town Image" />
+                            </div>
+                            <button class="slider-arrow prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="slider-arrow next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/MatthiasMifsud" title="GitHub">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--My JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/darkmode.js"></script>
+
+
+</body>
+
+</html>
