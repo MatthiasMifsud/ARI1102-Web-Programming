@@ -49,7 +49,7 @@ then when you find the folder that holds all the files (including the json and p
  sudo flask run --host 0.0.0.0
 ```
 
-Now your website is running locally on http://your-ip-addtress.com
+Now your website is running locally on http://your-ip-address.com
 ---
 
 # How to Run the Application
